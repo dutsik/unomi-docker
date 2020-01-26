@@ -19,7 +19,8 @@ services:
     container_name: unomi
     environment:
       - ELASTICSEARCH_HOST=elasticsearch
-      - ELASTICSEARCH_PORT=9300
+      - ELASTICSEARCH_TRANSPORT_PORT=9300
+      - ELASTICSEARCH_REST_PORT=9200
     ports:
       - 8181:8181
       - 9443:9443

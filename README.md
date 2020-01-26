@@ -13,4 +13,5 @@ docker-compose up
 When you start the `unomi` image, you can adjust the configuration of the Unomi instance by passing one or more environment variables on the `docker run` command line.
 
 - **`ELASTICSEARCH_HOST`** - The IP address of hostname for ElasticSearch
-- **`ELASTICSEARCH_PORT`** - The port for ElasticSearch
+- **`ELASTICSEARCH_TRANSPORT_PORT`** - The port of ElasticSearch transport interface (for Unomi)
+- **`ELASTICSEARCH_REST_PORT`** - The port of ElasticSearch REST interface (for health check)
